@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Website in maintenance!</title>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+		<link rel="icon" type="image/ico" href="/favicon.ico" />
+
+		<!-- arc.io -->
+		<script async src="https://arc.io/widget.min.js#Zgoc9rQ5"></script>
+
+		<style>
+			body {
+				margin: 0;
+				font-family: "IBMPlexSans";
+				font-weight: 400;
+				background-color: #181818;
+				color: #ededed;
+			}
+
+			#card {
+				display: grid;
+				grid-template-columns: repeat(2, auto);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: #1d1d1d;
+				font-family: "IBMPlexSans";
+				font-weight: 400;
+				padding: 1rem;
+				border-radius: 0.25rem;
+			}
+
+			#maintenance {
+				grid-column: 1;
+			}
+			#maintenance-img {
+				width: 75%;
+				min-width: 200px;
+				height: auto;
+			}
+			@media (max-width: 600px) {
+				#maintenance-img {
+					display: none;
+				}
+			}
+
+			#info {
+				grid-column: 2;
+			}
+
+			a {
+				text-decoration: none;
+				color: #5865F2;
+			}
+
+			@font-face {
+				font-family: "IBMPlexSans";
+				font-style: normal;
+				font-weight: 400;
+				src: url("/fonts/IBMPlexSans.woff2") format("woff2"), url("/fonts/IBMPlexSans.woff") format("woff");;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="card">
+			<div id="maintenance">
+				<img src="maintenance.png" id="maintenance-img" />
+			</div>
+			<div id="info">
+				<img src="cfmlogo.png" /><br /><br />
+				The website is under maintenance.<br />
+				Check back later!<br /><br />
+				Join our <a href="https://discord.gg/xeRNaKTKxN" target="_blank">discord server</a> for updates.
+			</div>
+		</div>
+	</body>
+</html>
